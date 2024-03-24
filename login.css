@@ -1,0 +1,170 @@
+
+.main_box{
+
+    height: 535px;
+    width: 376px;
+    border: 1px solid royalblue; 
+    /* background-image:linear-gradient(135deg, #afc245 10%, #f39fcb 100%); */
+    /* background-image:linear-gradient(135deg, #eef9b3 10%, #f9bfdd 100%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    left: 35vw;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0;
+    margin-top: 15vh;
+    opacity: 0.85;
+    box-shadow: -3px -3px 20px 3px rgb(183, 28, 92), 3px 3px 20px 3px rgb(128, 176, 253);
+    /* box-shadow: -3px -3px 20px 3px rgb(245, 194, 215), 3px 3px 20px 3px rgb(134, 174, 238); */
+
+
+}
+input{
+
+    height: 4vh;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid  grey;
+    /* background-image:linear-gradient(135deg, #afc245 10%, #f39fcb 100%); */
+    background-image:linear-gradient(135deg, #eef9b3 10%, #fdc1e0 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    outline: none;
+    font-size: 1.4em;
+    color:rgb(41, 11, 110);
+}
+h1{
+    text-align: center;
+    color: rgb(44, 45, 116);
+}
+input::placeholder{
+
+    color: rgb(97, 110, 163);
+    font-size: 1.5em;
+    border: none;
+
+}
+input:placeholder-shown{
+    border: white;
+    border-bottom: 1px solid  grey;
+    font-size: 0.8em;
+}
+button{
+    width: 43%;
+    height: 3vw;
+    border: 3px solid rgb(235, 149, 96);
+    border-radius: 10px;
+    background-color: rgb(52, 52, 169);
+    color: darkturquoise;
+    font-weight: bolder;
+    margin-left: 25%;
+
+}
+.input_box{
+
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+#forget_password{
+    margin-left: 55%;
+    font-weight: bolder;
+    color: chocolate;
+    margin-bottom: 8%;
+    font-size: 1.1em;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(21, 16, 171);
+    margin-top: 2%;
+    position: relative;
+    width: 27%;
+    top: 10%;
+    background-color: rgb(192, 242, 145);
+    margin-left: 37%;
+    border-radius: 10px;
+    font-size: 2.5em;
+}
+button:hover{
+
+    transform: scale(1.08);
+}
+form{
+    height: auto;
+    width: auto;
+}
+img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 62px;
+    left: 30px;
+}
+#car{
+
+    height: 40vh;
+    width: 30vw;
+    border: 2px solid red;
+    border-radius: 2%;
+    opacity: 0.7;
+    position: relative;
+    top: 20vw;
+
+}
+#signup{
+
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    background-color: rgb(235, 244, 194);
+    border-radius: 10px;
+    font-weight: bolder;
+    /* box-shadow: -1px -1px 5px 1px rgb(255, 85, 0), 1px 1px 5px 1px rgb(218, 158, 202); */
+    background-image:linear-gradient(135deg, #ddef78 10%, #ddf2a4 100%);
+
+}
+#forget_password a{
+    text-decoration: none;
+    color: rgb(191, 130, 86);
+}
+.main_box2{
+
+    height: 600px;
+    width: 376px;
+    border: 1px solid royalblue; 
+    /* background-image:linear-gradient(135deg, #afc245 10%, #f39fcb 100%); */
+    background-image:linear-gradient(135deg, #eef9b3 10%, #f9bfdd 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    left: 35vw;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0;
+    margin-top: 15vh;
+    opacity: 0.85;
+    box-shadow: -3px -3px 20px 3px rgb(183, 28, 92), 3px 3px 20px 3px rgb(128, 176, 253);
+    /* box-shadow: -3px -3px 20px 3px rgb(245, 194, 215), 3px 3px 20px 3px rgb(134, 174, 238); */
+}
+.input_box2{
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#box_2{
+    height: 440px;
+    left: 37vw;
+}
+#heading1{
+
+    position: relative;
+    right: 10px;
+    top: 40px;
+}
