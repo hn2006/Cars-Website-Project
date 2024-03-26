@@ -11,7 +11,7 @@ if (strcmp($password, $confirm_password)==0){
   if (mysqli_query($conn, $sql)) {
 
     $_SESSION['email']=$email_id;
-  header('location:main_page.html');
+  header('location:main_page.php');
 
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);

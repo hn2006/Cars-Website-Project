@@ -59,7 +59,6 @@
         $manf_id = $_POST['manufacturer_id'];
         $name = $_POST['name'];
         $year = $_POST['estd_year'];
-        // $dealer_id = $_POST['dealer_id'];
         
         
         $sql="insert into manufacturer(`manufacturer_id`,`name`,`estd_year`) values('$manf_id','$name','$year')" ;

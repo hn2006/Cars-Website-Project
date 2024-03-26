@@ -91,6 +91,10 @@
                     <input type="number" name="veh_id" class="form-control" required placeholder="Enter Vehicle id">
                 </div>
                 <div class="form-group">
+                    <label for="" class="title"> Vehicle Name : </lable>
+                    <input type="text" name="name" class="form-control" required placeholder="Enter Vehicle name">
+                </div>
+                <div class="form-group">
                     <label for=""> Type </lable>
                     <input type="text" name="type" class="form-control" placeholder="Enter Type">
                 </div>
@@ -121,6 +125,11 @@
                 <div class="form-group">
                     <label for=""> Manf_id </lable>
                     <input type="number" name="manf_id" class="form-control" placeholder="Enter Manf_id">
+                </div>
+
+                <div class="form-group">
+                    <label for=""> summary </lable>
+                    <textarea name="details" class="form-control" placeholder="Enter summary"></textarea>
                 </div>
                 
                 <button type="submit" name="insert" class="btn btn-primary">Save Data</button>
@@ -158,6 +167,7 @@
     include('conn.php');
     if(isset($_POST['insert'])) {
         $veh_id = $_POST['veh_id'];
+        $name = $_POST['name'];
         $type = $_POST['type'];
         $range = $_POST['range'];
         $battery = $_POST['battery'];
@@ -165,9 +175,10 @@
         $accel_time = $_POST['accel_time'];
         $img_link = $_POST['img_link'];
         $intl_price = $_POST['intl_price'];
+        $details = $_POST['details'];
         $manf_id = $_POST['manf_id'];
         
-        $sql="insert into vehicle(`veh_id`,`type`,`range`,`battery`,`top_speed`,`accel_time`,`img_link`,`intl_price`,`manf_id`) values('$veh_id','$type','$range','$battery','$top_speed','$accel_time','$img_link','$intl_price','$manf_id')" ;
+        $sql="insert into vehicle(`veh_id`,`name`,`type`,`range`,`battery`,`top_speed`,`accel_time`,`img_link`,`intl_price`,`details`,`manf_id`) values('$veh_id','$name','$type','$range','$battery','$top_speed','$accel_time','$img_link','$intl_price','$details','$manf_id')" ;
         $res=mysqli_query($conn, $sql);
         
         if($res) {

@@ -104,6 +104,10 @@
                                     <input type="text" name="type" class="form-control" value="<?php echo $result['type'] ?>" placeholder="Enter Type">
                                 </div>
                                 <div class="form-group">
+                                    <label for="" class="title"> Vehicle Name : </lable>
+                                    <input type="text" name="name" class="form-control" value="<?php echo $result['name']?>"  required placeholder="Enter Vehicle name">
+                                </div>
+                                <div class="form-group">
                                     <label for=""> Range </lable>
                                     <input type="text" name="range" class="form-control" value="<?php echo $result['range'] ?>" placeholder="Enter Range ">
                                 </div>
@@ -131,6 +135,10 @@
                                     <label for=""> Manf_id </lable>
                                     <input type="number" name="manf_id" class="form-control" value="<?php echo $result['manf_id'] ?>" placeholder="Enter Manf_id">
                                 </div>
+                                <div class="form-group">
+                                    <label for=""> summary </lable>
+                                    <textarea name="details" class="form-control" value="<?php echo $result['details'] ?>" placeholder="Enter summary"></textarea>
+                                </div>
                                 
                                 <button type="submit" name="update" class="btn btn-primary">Update Data</button>
 
@@ -151,8 +159,10 @@
                                     $img_link = $_POST['img_link'];
                                     $intl_price = $_POST['intl_price'];
                                     $manf_id = $_POST['manf_id'];
+                                    $name = $_POST['name'];
+                                    $details = $_POST['details'];
                                     // veh_id = '$veh_id',
-                                    $sql_q="UPDATE vehicle SET  battery = '$battery', top_speed = '$top_speed', accel_time = '$accel_time', img_link = '$img_link', intl_price = '$intl_price', manf_id = '$manf_id'  where veh_id = '$veh_id' ";
+                                    $sql_q="UPDATE vehicle SET   battery = '$battery', top_speed = '$top_speed', accel_time = '$accel_time', img_link = '$img_link', intl_price = '$intl_price', manf_id = '$manf_id', name='$name', details='$details'  where veh_id = '$veh_id' ";
                                     $res2=mysqli_query($conn, $sql_q);
                                     
                                     if($res2) {

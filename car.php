@@ -176,7 +176,6 @@ li{
 						   	  <div id="products_example">
 							   <div id="products">
                                <div class="image">
-                                    <!-- <?php echo '<img src="images/'.$result['img_link'].'">' ?> -->
                                     <?php echo '<img src="images/'.$result['img_link'].'" style="width: 100%; height : 100%">' ?>
                                 </div>
 								
